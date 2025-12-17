@@ -2,14 +2,14 @@ package com.example.demo.entity;
 
 import java.time.LocalDate;
 public class Student {
-    private int id;
+    private long id;
     private String name;
     private String email;
     
-    public int getId() {
+    public long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
     public String getName() {
@@ -25,13 +25,20 @@ public class Student {
         this.email = email;
     }
     
-    public Student(int id, String name, String email, LocalDate dob, float cgpa) {
+    public Student(long id, String name, String email, LocalDate dob, float cgpa) {
         this.id = id;
         this.name = name;
         this.email = email;
         
     }
     public Student() {
+        public void setId(int id) { 
+           this.id = id;
+    }
+    public int getId() { //Getting the data Id
+           return id;
+    }
+
     }
 
 }
