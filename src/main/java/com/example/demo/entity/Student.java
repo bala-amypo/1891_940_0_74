@@ -1,5 +1,7 @@
 package com.example.demo.entity;
-
+import jakarta.persistence.*;
+@entity
+@table(name="students")
 import java.time.LocalDate;
 public class Student {
     private long id;
@@ -37,7 +39,7 @@ public class Student {
     }
     public int getId() { //Getting the data Id
            return id;
-    }
+    }
 
     }
 
