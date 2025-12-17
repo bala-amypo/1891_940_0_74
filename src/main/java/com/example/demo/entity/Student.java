@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 import jakarta.persistence.*;
 @entity
-//@table(name="students")
+@table(name="students")
 import java.time.LocalDate;
 public class Student {
     @Id
