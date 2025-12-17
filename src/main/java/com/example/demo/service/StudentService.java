@@ -2,5 +2,5 @@ package com.example.demo.service;
 
 
 public interface StudentService {
-    Student
+    Student saveStudent(Student student);
 }
