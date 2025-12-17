@@ -7,10 +7,10 @@ import com.example.demo.entity.Student;
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
     public StudentServiceImpl(StudentRepository studentRepository){
-        
+        this.studentRepository=studentRepository;
     }
     public Student saveStudent(Student student){
-        return 
+        return studentRepository.save()
     }
     
 }
