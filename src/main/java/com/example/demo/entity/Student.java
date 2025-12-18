@@ -19,9 +19,7 @@ public class Student {
     @Size(min=3,max=20,message="The user name must be of min 3 and max 20 character")
     private String name;
     @Email(message="Invalid email id")
-    @column(unique=true);
     private String email;
-    
     //@NotNull
     //@Size(min,max)(to reccomend the use to the give no of characters)
     //@Min
@@ -55,6 +53,6 @@ public class Student {
         this.email = email;
         
     }
-    public Student() {
-    } 
+    public Student() {
+    } 
 }
