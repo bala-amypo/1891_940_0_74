@@ -10,7 +10,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Size;
 
 @Entity
- @Table(name="StudentTable")
+ @Table(name="Student")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
